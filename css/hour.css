@@ -1,0 +1,67 @@
+.hour_section {
+  margin-top: 50px;
+  color: #fff;
+}
+.hour_section .inner {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.hour_section .inner div.hour_container {
+  display: inline-flex;
+  position: relative;
+}
+.hour_section .inner div.hour_container ul {
+  display: inline-flex;
+}
+.hour_section .inner div.hour_container ul li {
+  width: 70px;
+  height: 450px;
+  box-sizing: border-box;
+}
+.hour_section .inner div.hour_container ul li > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+.hour_section .inner div.hour_container ul li > div b {
+  display: block;
+  margin: 3px 0;
+  font-size: 0.8em;
+}
+.hour_section .inner div.hour_container ul li > div b i {
+  margin-right: 3px;
+}
+.hour_section .inner div.hour_container ul li > div img {
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+.hour_section .inner div.hour_container .chart {
+  position: absolute;
+  width: calc(100% - 70px);
+  height: 300px;
+  left: 35px;
+  bottom: 0;
+}
+.hour_section .inner div.hour_container .chart .grid {
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  height: 330px;
+  width: 0;
+}
+.hour_section .inner div.hour_container .chart .grid span {
+  display: flex;
+  align-items: center;
+  font-size: 0.6em;
+  height: 9.09%;
+}/*# sourceMappingURL=hour.css.map */

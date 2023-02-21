@@ -1,0 +1,44 @@
+.daily_section {
+  margin: 50px 0;
+}
+.daily_section .inner {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.daily_section .inner .daily_container {
+  display: inline-flex;
+  position: relative;
+}
+.daily_section .inner .daily_container ul {
+  display: inline-flex;
+}
+.daily_section .inner .daily_container ul li {
+  width: 90px;
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+.daily_section .inner .daily_container ul li b {
+  display: block;
+  margin: 3px 0;
+  font-size: 0.8em;
+}
+.daily_section .inner .daily_container ul li b i {
+  margin-right: 5px;
+}
+.daily_section .inner .daily_container ul li b sup {
+  vertical-align: middle;
+}
+.daily_section .inner .daily_container ul li img {
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px auto;
+}/*# sourceMappingURL=daily.css.map */

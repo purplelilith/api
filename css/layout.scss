@@ -1,0 +1,54 @@
+@import 'mixin';
+body{
+  background-image: url(../img/main/weather-icos.gif);
+  animation: bgmove 100s linear infinite;
+  @keyframes bgmove{
+    0%{
+      background-position: 0 center;
+    }
+    100%{
+      background-position: -500% center;
+    }
+  }
+}
+#root{
+  @include pos_center;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 700px;
+  // background-image: url(../img/weather/Atmosphere.jpg); 스크립트 처리
+  background-size: cover;
+  background-position: center;
+  background-color: powderblue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  main{
+    overflow: auto;
+    height: 100%;
+  }
+  h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 230px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    .icon{
+      border-radius: 50%;
+      width: 35px;
+      margin-right: 10px;
+    }
+    i{
+      font-size: 0.7em;
+      margin-right: 5px;
+    }
+  }//h2
+}

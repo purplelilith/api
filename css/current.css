@@ -1,0 +1,234 @@
+.current_section {
+  position: relative;
+  height: 100%;
+  padding-top: 60px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current_section .inner {
+  width: 90%;
+  color: #fff;
+}
+.current_section .inner p.address {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  text-align: center;
+  width: 70%;
+}
+.current_section .inner .current_info {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.current_section .inner .current_info::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.current_section .inner .current_info .circle_wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.current_section .inner .current_info .circle_wrap .sun_time {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.current_section .inner .current_info .circle_wrap .sun_time .sun_circle {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.current_section .inner .current_info .circle_wrap .sun_time .sun_circle::before {
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  height: 200%;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid yellow;
+}
+.current_section .inner .current_info .circle_wrap .sun_time time {
+  position: absolute;
+  top: 52%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+}
+.current_section .inner .current_info .circle_wrap .sun_time time i {
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: 3px;
+  color: yellow;
+}
+.current_section .inner .current_info .circle_wrap .sun_time time.sunrise {
+  left: 0;
+}
+.current_section .inner .current_info .circle_wrap .sun_time time.sunset {
+  left: 100%;
+}
+.current_section .inner .current_info .circle_wrap .sun_time div.sun {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: 0;
+  transform-origin: right center;
+}
+.current_section .inner .current_info .circle_wrap .sun_time div.sun i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(243, 242, 152);
+  animation: sun_scale 1s infinite alternate linear;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+@keyframes sun_scale {
+  0% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+.current_section .inner .current_info .circle_wrap .temp_min_max {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.current_section .inner .current_info .circle_wrap .temp_min_max span {
+  margin: 0 5px;
+}
+.current_section .inner .current_info .circle_wrap .temp_min_max sup {
+  vertical-align: bottom;
+  margin-left: 3px;
+}
+.current_section .inner .current_info .circle_wrap .temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 2.7em;
+}
+.current_section .inner .current_info .circle_wrap .temp img {
+  width: 30%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.current_section .inner .current_info .circle_wrap .temp span b {
+  font-weight: 500;
+}
+.current_section .inner .current_info .circle_wrap .temp span sup {
+  font-size: 0.4em;
+}
+.current_section .inner .current_info .circle_wrap .desc {
+  font-size: 1.2em;
+}
+.current_section .inner .current_info .circle_wrap .rain_snow {
+  margin: 8px 0;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.current_section .inner .current_info .circle_wrap .rain_snow > b {
+  margin: 0 10px;
+}
+.current_section .inner .current_info .circle_wrap .rain_snow > b i {
+  margin-right: 5px;
+}
+.current_section .inner .current_info .circle_wrap .rain_snow > b small {
+  font-size: 0.7em;
+}
+.current_section .inner .current_info .circle_wrap .wind {
+  display: flex;
+  align-items: center;
+}
+.current_section .inner .current_info .circle_wrap .wind > b {
+  margin-right: 10px;
+}
+.current_section .inner .current_info .circle_wrap .wind > b.wind_deg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+  background-color: #4C86B4;
+}
+.current_section .inner .current_info .circle_wrap .wind > b.wind_speed i {
+  margin-right: 5px;
+}
+.current_section .inner .current_info .circle_wrap .wind > b.wind_speed small {
+  font-size: 0.7em;
+}
+.current_section .inner .time {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 0 0 5px #4C86B4;
+}
+.current_section .inner .time time {
+  display: block;
+  font-weight: 500;
+}
+.current_section .inner .time time.current_time {
+  font-size: 2.2em;
+}
+.current_section .inner .time time.current_time small {
+  font-size: 0.5em;
+}
+.current_section .more {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: #fff;
+}
+.current_section .more .minus {
+  display: none;
+}
+.current_section .more.active .plus {
+  display: none;
+}
+.current_section .more.active .minus {
+  display: block;
+}
+.current_section .more::before, .current_section .more::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  border-bottom: 3px solid #fff;
+}
+.current_section .more::before {
+  left: 100%;
+}
+.current_section .more::after {
+  right: 100%;
+}/*# sourceMappingURL=current.css.map */

@@ -1,0 +1,68 @@
+@import "mixin";
+.hour_section {
+  margin-top: 50px;
+  color: #fff;
+  .inner {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    div.hour_container {
+      display: inline-flex;
+      position: relative;
+      ul {
+        display: inline-flex;
+        li {
+          width: 70px;
+          height: 450px;
+          box-sizing: border-box;
+          > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            b {
+              display: block;
+              margin: 3px 0;
+              font-size: 0.8em;
+              i {
+                margin-right: 3px;
+              }
+            } //b
+            img {
+              width: 40px;
+              border-radius: 50%;
+              margin: 5px 0;
+            }
+          } //div
+        } //li
+      } //ul
+      .chart{
+        position: absolute;
+        width: calc(100% - 70px);
+        height: 300px;
+        left: 035px;
+        bottom: 0;
+        .grid{
+          position: absolute;
+          top:-15px; left: -30px;
+          height: 330px;
+          width: 0;
+          span{
+            display: flex;
+            align-items: center;
+            font-size: 0.6em;
+            height: 9.09%;
+          }
+        }//grid
+      }//chart
+    } //hour_container
+  } //inner
+}
+

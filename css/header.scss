@@ -1,0 +1,29 @@
+@import 'mixin';
+
+header{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  backdrop-filter: blur(4px);
+  button{
+    color: #fff;
+    font-size: 1.8em;
+  }//button
+  h1{
+    height: 80%;
+    img{
+      height: 100%;
+    }//img
+  }//h1
+  h1, button{
+    filter:drop-shadow(2px 2px 3px rgba(0,0,0,0.4));
+  }
+}
